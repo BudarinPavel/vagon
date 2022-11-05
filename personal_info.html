@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>vagon.ru</title>
+</head>
+<body>
+	<h1>Укажите пассажиров</h1>
+	<form action="" method="get" class="">
+		<label for="adults_amount">Взрослые</label>
+  		<input type="number" name="adults_amount" min="1" max="5"><br>
+		<label for="children_amount">Дети до 10 лет</label>
+  		<input type="number" name="children_amount" min="0" max="5"><br>
+  		<label for="children_amount">Дети до 5 лет</label>
+  		<input type="number" name="babies_amount" min="0" max="5"><br>
+		<button>К пассажирам</button>
+	</form>
+	<form action="" method="get" class="">
+		<!-- trip type -->
+		<p>Выбирите тип поездки</p>
+		<input type="radio" name="personal" value="personal">
+		<label for="job">Личная</label><br>
+		<input type="radio" name="job" value="job">
+		<label for="job">Рабочая</label><br>
+		<p>{1. Взрослый}</p>
+		<!-- fio -->
+		<label for="fname">Имя:</label><br>
+		<input type="text" name="fname" value=""><br>
+		<label for="lname">Фамилия:</label><br>
+		<input type="text" name="lname" value=""><br>
+		<label for="patronymic">Очество:</label><br>
+		<input type="text" name="patronymic" value=""><br>
+		<!-- sex -->
+		<p>Пол</p>
+		<input type="radio" name="male" value="male">
+		<label for="male">Мужской</label><br>
+		<input type="radio" name="female" value="female">
+		<label for="female">Жеский</label><br>
+		<!-- birthday -->
+		<label for="birthday">Дата рождения</label>
+		<input type="date" name="birthday">
+
+		<label for="doc_type">Документ</label>
+
+		<select name="doc_type">
+		  <option value="passport">Паспорт РФ</option>
+		  <option value="birth_certificate">Св-во о рождении</option>
+		  <option value="intenational_passport">Загранпаспорт РФ</option>
+		  <option value="military_id">Военный билет</option>
+		  <option value="sailor_passport">Паспорт моряка</option>
+		  <option value="another">Иностранный документ</option>
+		</select>
+
+		<label for="doc_number">Номер документа</label><br>
+		<input type="text" name="doc_number"><br>
+
+		<label for="phone">Моб. телефон</label>
+		<input type="tel" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}">
+
+		<label for="email">Эл. почта</label>
+		<input type="email" name="email">
+
+		<input type="checkbox" name="agreement">
+		<label for="agreement">Даю согласие на обработку персональных данных</label><br>
+
+		<input type="submit" value="Продолжить">
+	</form>
+	<div class="footer">
+		<ul class="footer_menu">
+			<li class="list_item">
+				<a href="about.html">О компании</a>
+			</li>
+			<li class="list_item">
+				<a href="contacts.html">Контакты</a>
+			</li>
+			<li class="list_item">
+				<a href="index.html">Главная</a>
+			</li>
+		</ul>
+	</div>
+</body>
+</html>
